@@ -19,7 +19,7 @@ function classNames(...classes) {
 }
 
 
-export default function copydata() {
+export default function Home() {
   const [activeTab, setActiveTab] = useState("Real data");
   const [toastmsg, setToastMsg] = useState("")
   const [failtoastmsg, setFailToastMsg] = useState("")
