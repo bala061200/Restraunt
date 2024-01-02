@@ -24,7 +24,7 @@ export default function RealData(props) {
         setCoping(true)
         try {
             const response = await fetch(
-                `http://localhost:4000/user/create/copy`,
+                `https://restraunt-node.vercel.app/user/create/copy`,
                 {
                     method: "POST",
                     headers: {
