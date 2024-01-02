@@ -8,7 +8,7 @@ export default function CopyData(props) {
         async function fetchCopyUser() {
             try {
                 const response = await fetch(
-                    `https://restraunt-node.vercel.app/user/list/copy`,
+                    `${process.env.NEXT_PUBLIC_SERVER}/user/list/copy`,
                     {
                         method: "GET",
 

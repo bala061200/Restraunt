@@ -58,7 +58,7 @@ export default function Home() {
     setCreatingUser(true)
     try {
       const response = await fetch(
-        `https://restraunt-node.vercel.app/user/create`,
+        `${process.env.NEXT_PUBLIC_SERVER}/user/create`,
         {
           method: "POST",
 
@@ -106,7 +106,7 @@ export default function Home() {
   async function fetchdata() {
     try {
       const response = await fetch(
-        `https://restraunt-node.vercel.app/user/list/real`,
+        `${process.env.NEXT_PUBLIC_SERVER}/user/list/real`,
         {
           method: "GET",
 
